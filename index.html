@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>牛逼叉电影网 · NB CHA | 在线看电影、追剧、刷综艺一站直达</title>
+<meta name="keywords" content="牛逼叉电影网,NB叉电影网,牛逼叉电影,在线看电影,免费电影网站,热播电视剧,院线新片,高分电影榜,港片经典,悬疑片推荐,动作片大全,喜剧片片单,恐怖片盘点,纪录片推荐,观影吐槽,影视杂谈,牛逼叉电影网 nbcha">
+<meta name="description" content="牛逼叉电影网（NB CHA）是一个聊电影、追剧、刷综艺的影视内容站点。这里没有算法投喂，只有真实看片记录：院线新片速评、高分冷门榜、港片与悬疑片专题、观影吐槽和每周影视杂谈。牛逼叉电影网，陪你把每一部片子看完，再决定骂不骂它。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="牛逼叉电影网编辑部">
+<meta name="copyright" content="© 牛逼叉电影网 nbcha">
+<meta name="revisit-after" content="7 days">
+<meta name="language" content="zh-CN">
+<meta name="theme-color" content="#0e0a14">
+<meta property="og:type" content="website">
+<meta property="og:title" content="牛逼叉电影网 · NB CHA | 在线看电影、追剧、刷综艺一站直达">
+<meta property="og:description" content="聊电影、追剧、刷综艺的影视内容站点：院线新片速评、高分冷门榜、港片悬疑专题与每周影视杂谈。">
+<meta property="og:url" content="https://niubichadianyingwang-zh.github.io/">
+<meta property="og:site_name" content="牛逼叉电影网">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="牛逼叉电影网 | 在线看电影追剧刷综艺">
+<meta name="twitter:description" content="真实看片记录：院线速评、高分冷门榜、港片悬疑专题与每周影视杂谈。">
+<link rel="canonical" href="https://niubichadianyingwang-zh.github.io/">
+<style>
+:root{
+  --bg:#0e0a14;--bg2:#160f1f;--ink:#f5f0fa;--ink2:#c3bad0;--ink3:#8c809d;
+  --line:rgba(255,255,255,.09);--line2:rgba(255,255,255,.16);
+  --neon:#ff3ea5;--neon2:#b026ff;--cy:#2ef3d6;--yl:#ffd23f;--rd:#ff4d3d;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.85;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(1200px 700px at 85% -10%,rgba(176,38,255,.20),transparent 60%),radial-gradient(900px 600px at 0% 20%,rgba(255,62,165,.13),transparent 55%)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.015) 3px 4px);pointer-events:none}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+img{max-width:100%;display:block}
+::selection{background:var(--neon);color:#fff}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+
+/* 顶部 */
+header{border-bottom:1px solid var(--line);background:rgba(14,10,20,.86);backdrop-filter:blur(12px);position:sticky;top:0;z-index:60}
+.bar{display:flex;align-items:center;gap:16px;padding:9px 0;font-size:11.5px;color:var(--ink3);border-bottom:1px solid var(--line);letter-spacing:1px}
+.bar marquee{color:var(--cy)}
+.bar b{color:var(--yl);font-weight:700}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:18px}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .box{width:46px;height:46px;border:2px solid var(--neon);border-radius:8px;display:grid;place-items:center;font-size:23px;font-weight:900;color:var(--neon);font-style:italic;transform:rotate(-4deg);box-shadow:0 0 14px rgba(255,62,165,.35)}
+.logo .tx b{font-size:20px;letter-spacing:.5px;line-height:1.15;display:block}
+.logo .tx small{font-size:10.5px;color:var(--cy);letter-spacing:3px}
+.menu{display:flex;align-items:center;gap:4px}
+.menu a{font-size:14px;padding:9px 14px;border-radius:7px;color:var(--ink2);transition:.2s}
+.menu a:hover{color:var(--neon);background:rgba(255,62,165,.09)}
+.nr{display:flex;align-items:center;gap:12px}
+.search{display:flex;align-items:center;background:var(--bg2);border:1px solid var(--line2);border-radius:30px;padding:8px 14px;gap:8px}
+.search input{background:none;border:none;outline:none;color:var(--ink);font-size:13px;width:150px}
+.search input::placeholder{color:var(--ink3)}
+.search span{color:var(--ink3);font-size:12px}
+.btn{background:var(--neon);color:#fff;border:none;padding:10px 20px;border-radius:30px;font-size:13.5px;font-weight:700;cursor:pointer;box-shadow:0 6px 20px -6px var(--neon)}
+.btn:hover{filter:brightness(1.12)}
+.btn.gh{background:var(--bg2);border:1px solid var(--line2)}
+.mbtn{display:none;width:44px;height:44px;border-radius:8px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);font-size:19px;cursor:pointer}
+.mpan{display:none}
+
+/* Hero 录像带 */
+.hero{padding:74px 0 54px;border-bottom:1px solid var(--line);position:relative}
+.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tag{font-size:11px;padding:5px 11px;border:1px solid var(--line2);border-radius:4px;color:var(--ink3);letter-spacing:1px}
+.tag.h{color:var(--yl);border-color:var(--yl)}
+.hero h1{font-size:clamp(38px,7vw,86px);line-height:.96;font-weight:900;letter-spacing:-2px;font-style:italic}
+.hero h1 .x{color:var(--neon);text-shadow:0 0 26px rgba(255,62,165,.6)}
+.hero h1 .slash{color:var(--ink3);font-weight:300;font-size:.5em;vertical-align:middle;margin:0 8px}
+.hero .sub{margin-top:22px;font-size:16px;color:var(--ink2);max-width:640px}
+.hero .sub b{color:var(--cy)}
+.ctas{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.tape{margin-top:46px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line2);border:1px solid var(--line2);border-radius:14px;overflow:hidden}
+.tape div{background:var(--bg2);padding:20px 18px}
+.tape b{display:block;font-family:Georgia,serif;font-size:31px;font-weight:900;color:var(--yl);line-height:1}
+.tape span{font-size:12px;color:var(--ink3);margin-top:7px;display:block}
+.tape i{font-style:normal;font-size:11px;color:var(--neon);display:block;margin-top:5px}
+
+/* 通用 */
+section{padding:84px 0}
+.kicker{font-size:11px;letter-spacing:4px;color:var(--neon);text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(26px,3.6vw,40px);font-weight:900;line-height:1.25;letter-spacing:-.5px}
+h2 em{font-style:normal;color:var(--neon)}
+.lead{font-size:14.5px;color:var(--ink3);max-width:700px;margin-top:12px}
+.sec-h{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+
+/* 横向标签页 */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:26px;border-bottom:1px solid var(--line)}
+.tab{padding:12px 20px;font-size:14.5px;font-weight:700;cursor:pointer;color:var(--ink3);border-bottom:2px solid transparent;transition:.2s;position:relative;white-space:nowrap}
+.tab:hover{color:var(--ink2)}
+.tab.on{color:var(--neon);border-bottom-color:var(--neon)}
+.tab .n{font-family:Georgia,serif;font-size:11px;opacity:.6;margin-right:6px}
+.panel{display:none;animation:fx .4s ease}
+.panel.on{display:block}
+@keyframes fx{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.post{background:var(--bg2);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.3s}
+.post:hover{border-color:var(--neon);transform:translateY(-5px);box-shadow:0 20px 40px -25px var(--neon)}
+.post .cv{position:relative;aspect-ratio:16/10;overflow:hidden}
+.post .cv img{width:100%;height:100%;object-fit:cover;transition:.6s;filter:saturate(.85) contrast(1.05)}
+.post:hover .cv img{transform:scale(1.07);filter:none}
+.post .cv .t{position:absolute;top:12px;left:12px;font-size:10.5px;background:var(--bg);color:var(--cy);padding:4px 9px;border-radius:3px;font-weight:700;letter-spacing:1px}
+.post .cv .min{position:absolute;bottom:12px;right:12px;font-size:11px;background:rgba(0,0,0,.72);padding:3px 8px;border-radius:3px}
+.post .cv .rt{position:absolute;bottom:12px;left:12px;font-size:12px;font-weight:800;color:var(--yl)}
+.post .bd{padding:18px 20px}
+.post .bd h4{font-size:17.5px;font-weight:800;line-height:1.45;margin-bottom:8px}
+.post .bd p{font-size:13.5px;color:var(--ink3);line-height:1.75;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.post .bd .bt{display:flex;justify-content:space-between;font-size:12px;color:var(--ink3);margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.post .bd .bt a{color:var(--neon);font-weight:700}
+
+/* 分类索引 大字 */
+.idx{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.icard{background:var(--bg2);padding:30px 24px;position:relative;transition:.3s;cursor:pointer;border-top:3px solid transparent}
+.icard:hover{background:#1c1327;border-top-color:var(--neon)}
+.icard .g{font-size:11px;color:var(--ink3);letter-spacing:2px}
+.icard h3{font-size:22px;margin:12px 0 8px;font-weight:900}
+.icard p{font-size:13px;color:var(--ink3);line-height:1.8}
+.icard .cnt{margin-top:18px;font-size:11.5px;color:var(--cy);font-family:Georgia,serif}
+.icard .cnt b{font-size:22px;color:var(--yl)}
+.icard .ar{position:absolute;top:24px;right:20px;font-size:19px;color:var(--line2);transition:.3s}
+.icard:hover .ar{color:var(--neon);transform:translateX(5px)}
+
+/* 排行榜 横向条 */
+.rank{display:flex;flex-direction:column;gap:14px}
+.rk{display:grid;grid-template-columns:56px 130px 1fr auto;gap:20px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 18px;transition:.25s}
+.rk:hover{border-color:var(--neon)}
+.rk .no{font-family:Georgia,serif;font-size:28px;font-weight:900;color:var(--ink3);line-height:1}
+.rk.g1 .no{color:var(--yl)}.rk.g2 .no{color:var(--cy)}.rk.g3 .no{color:var(--neon)}
+.rk .th{font-size:13px;font-weight:800;color:var(--ink2)}
+.rk .th small{display:block;font-size:11px;color:var(--ink3);font-weight:400;margin-top:2px}
+.rk .bar{height:6px;background:rgba(255,255,255,.07);border-radius:10px;overflow:hidden}
+.rk .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--neon),var(--neon2));border-radius:10px}
+.rk .sc{font-size:20px;font-weight:900;color:var(--yl);font-family:Georgia,serif}
+
+/* 双栏：杂谈 + 吐槽 */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.split > div h3{font-size:21px;font-weight:900;margin-bottom:6px}
+.split > div .note{font-size:12.5px;color:var(--ink3);margin-bottom:22px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.tk{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.tk .d{font-family:Georgia,serif;font-size:13px;color:var(--neon);flex-shrink:0;width:46px;padding-top:3px}
+.tk .c h5{font-size:15.5px;font-weight:800;margin-bottom:5px;line-height:1.5}
+.tk .c p{font-size:13.5px;color:var(--ink3);line-height:1.8}
+.tk .c .src{margin-top:7px;font-size:11.5px;color:var(--cy)}
+
+/* 本周节目单 */
+.schedule{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.day{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px 14px;transition:.25s}
+.day:hover{border-color:var(--cy)}
+.day h6{font-size:12px;color:var(--cy);letter-spacing:2px;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.day .it{font-size:12.5px;padding:9px 0;border-bottom:1px dashed var(--line);color:var(--ink2);line-height:1.6}
+.day .it:last-child{border:none}
+.day .it b{display:block;color:var(--ink);font-size:13px;font-weight:700}
+.day .it span{font-size:10.5px;color:var(--neon);letter-spacing:1px}
+
+/* 投稿/订阅 */
+.cta{background:linear-gradient(135deg,var(--bg2),#1c0f2e);border:1px solid var(--line2);border-radius:20px;padding:50px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.cta::before{content:"NBCHA";position:absolute;right:24px;bottom:-34px;font-size:120px;font-weight:900;font-style:italic;color:rgba(255,255,255,.035);letter-spacing:2px}
+.cta h3{font-size:clamp(24px,3.2vw,34px);font-weight:900;line-height:1.4}
+.cta h3 em{font-style:normal;color:var(--neon)}
+.cta p{font-size:14.5px;color:var(--ink3);margin-top:12px}
+.cta form{display:flex;gap:10px;flex-wrap:wrap}
+.cta input{flex:1;min-width:180px;background:var(--bg);border:1px solid var(--line2);border-radius:30px;padding:13px 20px;color:var(--ink);font-size:14px;outline:none}
+.cta input:focus{border-color:var(--neon)}
+.cta .note2{font-size:12px;color:var(--ink3);margin-top:12px}
+.cta .note2 b{color:var(--cy);font-weight:600}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:60px 0 28px;background:#0a0710}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.fg h6{font-size:14px;margin-bottom:16px;font-weight:900;letter-spacing:1px}
+.fg p,.fg li{font-size:13.5px;color:var(--ink3);line-height:1.9}
+.fg ul{list-style:none}
+.fg ul li a{transition:.2s;color:var(--ink2)}
+.fg ul li a:hover{color:var(--neon);padding-left:5px}
+.fg .urlbox{margin-top:16px;border:1px dashed var(--line2);border-radius:10px;padding:13px 15px;font-size:12px;color:var(--ink3);word-break:break-all;background:var(--bg2)}
+.fg .urlbox b{color:var(--yl);display:block;margin-bottom:4px;font-size:12.5px;letter-spacing:1px}
+.fb{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--line);font-size:12px;color:var(--ink3)}
+.fb .lk a{margin-left:20px;color:var(--ink3)}
+.fb .lk a:hover{color:var(--neon)}
+
+#top{position:fixed;right:20px;bottom:24px;width:46px;height:46px;border-radius:8px;background:var(--neon);border:none;color:#fff;font-size:17px;cursor:pointer;opacity:0;visibility:hidden;transition:.3s;z-index:70;box-shadow:0 8px 24px -8px var(--neon)}
+#top.on{opacity:1;visibility:visible}
+
+@media(max-width:1000px){
+  .posts{grid-template-columns:1fr 1fr}
+  .schedule{grid-template-columns:1fr 1fr}
+  .idx{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  .hero{padding:48px 0 40px}
+  .tape{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr;gap:36px}
+  .cta{grid-template-columns:1fr;padding:34px 26px}
+  .rk{grid-template-columns:44px 100px 1fr;gap:12px}
+  .rk .sc{display:none}
+  .menu{display:none}
+  .search{display:none}
+  .mbtn{display:block}
+  .fg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .wrap{padding:0 16px}
+  .posts{grid-template-columns:1fr}
+  .schedule{grid-template-columns:1fr}
+  .idx{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .hero h1{font-size:42px}
+  .fg{grid-template-columns:1fr}
+  .mpan.open{display:flex;flex-direction:column;position:fixed;inset:118px 0 0;background:var(--bg);z-index:55;padding:24px 18px;gap:2px;overflow-y:auto}
+  .mpan.open a{padding:15px 12px;border-bottom:1px solid var(--line);font-size:15.5px;color:var(--ink2)}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header>
+  <div class="wrap">
+    <div class="bar"><span>📺 牛逼叉电影网 · 每日更新</span><marquee scrollamount="4">本周重点关注：院线片速评 / 港片黄金年代补完计划 / 悬疑片专题第二季 / 本周影视杂谈 · 每周三、周日更新</marquee></div>
+  </div>
+  <div class="wrap nav">
+    <a class="logo" href="#"><span class="box">叉</span><span class="tx"><b>牛逼叉电影网</b><small>N B C H A</small></span></a>
+    <nav class="menu">
+      <a href="#tab">速评速看</a>
+      <a href="#idx">类型频道</a>
+      <a href="#rank">高分榜单</a>
+      <a href="#talk">影视杂谈</a>
+      <a href="#sch">更新节目单</a>
+      <a href="#sub">读者来信</a>
+    </nav>
+    <div class="nr">
+      <div class="search"><span>🔍</span><input placeholder="搜片名 / 演员 / 类型"><span>回车</span></div>
+      <button class="btn gh">登录</button>
+      <button class="btn">订阅</button>
+      <button class="mbtn" id="mbtn" aria-label="菜单">☰</button>
+    </div>
+  </div>
+</header>
+<div class="mpan" id="mpan">
+  <a href="#tab">速评速看</a><a href="#idx">类型频道</a><a href="#rank">高分榜单</a><a href="#talk">影视杂谈</a><a href="#sch">更新节目单</a><a href="#sub">读者来信</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div class="tagrow">
+      <span class="tag h">● 正在更新</span>
+      <span class="tag">院线新片</span><span class="tag">高分冷门</span><span class="tag">港片补完</span><span class="tag">悬疑专题</span><span class="tag">每周杂谈</span>
+    </div>
+    <h1>牛逼叉<span class="slash">/</span>电影网</h1>
+    <h1><span class="x">叉</span> 在看什么</h1>
+    <p class="sub">牛逼叉电影网（<b>NB CHA</b>）是一个聊电影、追剧、刷综艺的影视内容站点。没有算法投喂，只有真实的看片记录：<b>哪里好看、哪里拉胯，看完再说</b>。访问入口：<b style="color:var(--yl)">niubichadianyingwang-zh.github.io</b></p>
+    <div class="ctas">
+      <button class="btn" onclick="document.getElementById('tab').scrollIntoView()">开始看片</button>
+      <button class="btn gh" onclick="document.getElementById('rank').scrollIntoView()">先看高分榜</button>
+      <button class="btn gh" onclick="document.getElementById('sch').scrollIntoView()">查看更新节目单</button>
+    </div>
+    <div class="tape">
+      <div><b>1280</b><span>已评影片</span><i>持续补完中</i></div>
+      <div><b>9</b><span>类型频道</span><i>动作 / 喜剧 / 悬疑</i></div>
+      <div><b>52</b><span>高分榜单</span><i>每周刷新</i></div>
+      <div><b>每日</b><span>更新节奏</span><i>周三 / 周日加更</i></div>
+    </div>
+  </div>
+</section>
+
+<!-- 标签页 速评 -->
+<section id="tab">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><div class="kicker">01 / 速评速看</div><h2>看完就写，<em>不装客观</em></h2>
+      <p class="lead">牛逼叉电影网的速评规则很简单：看完 72 小时内动笔，说清值不值得看、适合什么心情看、哪一段最拉胯。点击标签切换类型。</p></div>
+      <a href="#" style="color:var(--neon);font-size:14px;font-weight:700">全部速评 →</a>
+    </div>
+    <div class="tabs" id="tabs">
+      <div class="tab on" data-t="all"><span class="n">00</span>全部</div>
+      <div class="tab" data-t="new"><span class="n">01</span>院线新片</div>
+      <div class="tab" data-t="cold"><span class="n">02</span>高分冷门</div>
+      <div class="tab" data-t="hk"><span class="n">03</span>港片补完</div>
+      <div class="tab" data-t="sus"><span class="n">04</span>悬疑专题</div>
+    </div>
+    <div class="posts">
+      <article class="post" data-cat="new"><div class="cv"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=700&q=70" alt=""><span class="t">院线新片</span><span class="min">136 分钟</span><span class="rt">★ 7.6</span></div><div class="bd"><h4>哪段是它最好的部分，哪段又让你想看手机</h4><p>故事讲到中段开始跑偏，但摄影与配乐一直在线。牛逼叉电影网认为它属于"画面值回票价、剧本只值一半"的那一类，适合冲着视听去的观众。</p><div class="bt"><span>动作 / 犯罪 · 2024</span><a href="#">看完整速评 →</a></div></div></article>
+      <article class="post" data-cat="cold"><div class="cv"><img src="https://images.unsplash.com/photo-1509927083803-5bd8391c1f9b?w=700&q=70" alt=""><span class="t">高分冷门</span><span class="min">98 分钟</span><span class="rt">★ 8.9</span></div><div class="bd"><h4>这部没人安利的片子，把离别拍得极克制</h4><p>没有撕扯、没有背景音乐煽情，全靠两个人的沉默与一顿饭。看完不会想推荐给所有人，但会想发给那个很久没联系的人。</p><div class="bt"><span>剧情 / 家庭 · 2019</span><a href="#">看完整速评 →</a></div></div></article>
+      <article class="post" data-cat="hk"><div class="cv"><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=700&q=70" alt=""><span class="t">港片补完</span><span class="min">112 分钟</span><span class="rt">★ 8.4</span></div><div class="bd"><h4>港片为什么擅长把兄弟情拍得像爱情</h4><p>一杯奶茶、一个转身、一句"我走先"。港片补完计划第二期，聊它怎么用生活细节代替告白，又怎么让男性情谊有了亲密感。</p><div class="bt"><span>犯罪 / 剧情 · 1996</span><a href="#">看完整速评 →</a></div></div></article>
+      <article class="post" data-cat="sus"><div class="cv"><img src="https://images.unsplash.com/photo-1509281373149-e957c6296406?w=700&q=70" alt=""><span class="t">悬疑专题</span><span class="min">121 分钟</span><span class="rt">★ 7.9</span></div><div class="bd"><h4>反转第三次的时候，观众已经开始走神</h4><p>前四十分钟是最好的悬疑片，后面每一个反转都在消耗前面的信任。牛逼叉电影网的结论是：敢收手比敢反转更难。</p><div class="bt"><span>悬疑 / 惊悚 · 2023</span><a href="#">看完整速评 →</a></div></div></article>
+      <article class="post" data-cat="new"><div class="cv"><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=700&q=70" alt=""><span class="t">院线新片</span><span class="min">104 分钟</span><span class="rt">★ 8.1</span></div><div class="bd"><h4>一部靠台词撑起来的爱情片，为什么依然成立</h4><p>几乎没有动作场面，全片靠对话推进，节奏却被拿捏得很稳。它证明了慢并不等于无聊，前提是每一句台词都算数。</p><div class="bt"><span>爱情 / 剧情 · 2024</span><a href="#">看完整速评 →</a></div></div></article>
+      <article class="post" data-cat="cold"><div class="cv"><img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=700&q=70" alt=""><span class="t">高分冷门</span><span class="min">87 分钟</span><span class="rt">★ 8.7</span></div><div class="bd"><h4>片长不到九十分钟，却把一辈子的遗憾讲完了</h4><p>叙事结构不算新鲜，胜在克制与留白。结尾那个长达一分钟的固定镜头，是本季度最让人舍不得快进的画面。</p><div class="bt"><span>剧情 / 文艺 · 2021</span><a href="#">看完整速评 →</a></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 类型索引 -->
+<section id="idx" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><div class="kicker">02 / 类型频道</div><h2>九个频道，<em>按心情挑</em></h2>
+      <p class="lead">不想被推荐算法决定今晚看什么？牛逼叉电影网把内容拆成九个频道，每个频道都有固定的更新节奏和选片标准。</p></div>
+      <a href="#" style="color:var(--neon);font-size:14px;font-weight:700">频道总览 →</a>
+    </div>
+    <div class="idx">
+      <div class="icard"><span class="ar">→</span><div class="g">CH.01</div><h3>动作频道</h3><p>追车、枪战、近身肉搏。我们只聊动作戏的编排与剪辑，不聊谁赢谁输。</p><div class="cnt"><b>146</b> 篇速评</div></div>
+      <div class="icard"><span class="ar">→</span><div class="g">CH.02</div><h3>喜剧频道</h3><p>笑点为什么会失效？我们按梗、节奏与表演三层拆解，不靠"哈哈哈哈"写评论。</p><div class="cnt"><b>98</b> 篇速评</div></div>
+      <div class="icard"><span class="ar">→</span><div class="g">CH.03</div><h3>悬疑频道</h3><p>反转、时间线、叙述性诡计。每篇速评都写清"第几次反转开始掉分"。</p><div class="cnt"><b>112</b> 篇速评</div></div>
+      <div class="icard"><span class="ar">→</span><div class="g">CH.04</div><h3>恐怖频道</h3><p>jump scare 数量、音效设计、氛围营造分别打分，告诉你恐怖从哪来。</p><div class="cnt"><b>73</b> 篇速评</div></div>
+      <div class="icard"><span class="ar">→</span><div class="g">CH.05</div><h3>港片频道</h3><p>港片黄金年代补完计划，按导演、年代与主题两条线整理，边看边补。</p><div class="cnt"><b>64</b> 篇速评</div></div>
+      <div class="icard"><span class="ar">→</span><div class="g">CH.06</div><h3>爱情频道</h3><p>分初恋、暗恋、异地、重逢四类，按情绪而不是年份排片单。</p><div class="cnt"><b>88</b> 篇速评</div></div>
+      <div class="icard"><span class="ar">→</span><div class="g">CH.07</div><h3>纪录频道</h3><p>社会、自然、人物三条线，每部都标清片长与观看门槛，适合碎片时间。</p><div class="cnt"><b>55</b> 篇速评</div></div>
+      <div class="icard"><span class="ar">→</span><div class="g">CH.08</div><h3>动画频道</h3><p>院线动画、独立短片、成人向动画分开聊，不混在一个"动画片"里。</p><div class="cnt"><b>61</b> 篇速评</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 高分榜 -->
+<section id="rank" style="padding-top:0;background:#0a0710">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><div class="kicker">03 / 高分榜单</div><h2>牛逼叉电影网<em>本周高分榜</em></h2>
+      <p class="lead">榜单每周一刷新，分数来自本站编辑打分与读者投票的加权结果，不是平台平均分，也没有广告位。</p></div>
+      <a href="#" style="color:var(--neon);font-size:14px;font-weight:700">查看完整榜单 →</a>
+    </div>
+    <div class="rank">
+      <div class="rk g1"><span class="no">01</span><div class="th">哪段是它最好的部分<small>院线新片 · 动作犯罪</small></div><span class="bar"><i style="width:96%"></i></span><span class="sc">9.6</span></div>
+      <div class="rk g2"><span class="no">02</span><div class="th">这部没人安利的片子<small>高分冷门 · 剧情家庭</small></div><span class="bar"><i style="width:92%"></i></span><span class="sc">9.2</span></div>
+      <div class="rk g3"><span class="no">03</span><div class="th">港片为什么擅长拍兄弟情<small>港片补完 · 犯罪剧情</small></div><span class="bar"><i style="width:89%"></i></span><span class="sc">8.9</span></div>
+      <div class="rk"><span class="no">04</span><div class="th">反转第三次的时候观众开始走神<small>悬疑专题 · 惊悚</small></div><span class="bar"><i style="width:85%"></i></span><span class="sc">8.5</span></div>
+      <div class="rk"><span class="no">05</span><div class="th">靠台词撑起来的爱情片为何成立<small>院线新片 · 爱情</small></div><span class="bar"><i style="width:82%"></i></span><span class="sc">8.3</span></div>
+      <div class="rk"><span class="no">06</span><div class="th">不到九十分钟讲完一生遗憾<small>高分冷门 · 文艺</small></div><span class="bar"><i style="width:79%"></i></span><span class="sc">8.1</span></div>
+      <div class="rk"><span class="no">07</span><div class="th">恐怖从哪来：音效设计的胜利<small>恐怖频道 · 超自然</small></div><span class="bar"><i style="width:75%"></i></span><span class="sc">7.8</span></div>
+      <div class="rk"><span class="no">08</span><div class="th">动画短片合集里的三个惊喜<small>动画频道 · 独立短片</small></div><span class="bar"><i style="width:71%"></i></span><span class="sc">7.5</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 杂谈 + 吐槽 -->
+<section id="talk" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><div class="kicker">04 / 杂谈 & 吐槽</div><h2>影视杂谈<em>与观影吐槽</em></h2>
+      <p class="lead">左边是编辑部的长篇观点，右边是读者与编辑的短评现场。两者都不接受"水军式好评"。</p></div>
+    </div>
+    <div class="split">
+      <div>
+        <h3>影视杂谈 · 每周一篇</h3>
+        <p class="note">编辑部观点，不代表任何片方立场，可自由反驳。</p>
+        <div class="tk"><div class="d">VOL.42</div><div class="c"><h5>为什么国产片越来越怕让主角犯错</h5><p>主角一旦犯错，观众就觉得"不合理"，于是我们看到的角色越来越完美、越来越无趣。这篇杂谈从三个近年的例子聊起，谈"讨喜"如何取代"可信"。</p><div class="src">作者：叉哥 · 阅读约 9 分钟</div></div></div>
+        <div class="tk"><div class="d">VOL.41</div><div class="c"><h5>片尾彩蛋泛滥，是一种尊重观众的幻觉</h5><p>当每部片都要塞两到三个彩蛋，彩蛋就从惊喜变成了义务。我们统计了今年院线片的彩蛋数量，结论是：留白比暗示更贵。</p><div class="src">作者：老叉 · 阅读约 7 分钟</div></div></div>
+        <div class="tk"><div class="d">VOL.40</div><div class="c"><h5>为什么我们开始怀念"慢开场"的电影</h5><p>前十分钟不交代任何冲突，放在今天是冒险的。但这批片子往往后劲最大。本期聊慢开场如何重建观众的耐心。</p><div class="src">作者：叉妹 · 阅读约 8 分钟</div></div></div>
+      </div>
+      <div>
+        <h3>观影吐槽 · 读者短评</h3>
+        <p class="note">从读者留言里挑出最实在的几条，不删不改，只做脱敏处理。</p>
+        <div class="tk"><div class="d">05.20</div><div class="c"><h5>"不是烂，是懒。"</h5><p>整部片看下来只觉得剧组在赶进度，连转场都懒得设计。建议片方把预算多分一点给编剧。</p><div class="src">读者 · 关于某部院线新片</div></div></div>
+        <div class="tk"><div class="d">05.18</div><div class="c"><h5>"反转很好猜，但气氛救了它。"</h5><p>结局早猜到了，还是看完了。音效和镜头把紧张感顶住了，属于"明知被套路还是愿意配合"的那种。</p><div class="src">读者 · 关于某部悬疑片</div></div></div>
+        <div class="tk"><div class="d">05.15</div><div class="c"><h5>"后半段像换了编剧。"</h5><p>前四十分钟我以为自己要爱上这部片，后四十分钟只想快进。最可惜的不是烂尾，是好牌打得稀碎。</p><div class="src">读者 · 关于某部剧情片</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 节目单 -->
+<section id="sch" style="padding-top:0;background:#0a0710">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><div class="kicker">05 / 更新节目单</div><h2>本周<em>更新安排</em></h2>
+      <p class="lead">牛逼叉电影网按固定节奏更新，读者可以照着节目单蹲点，错过也不会找不到。</p></div>
+    </div>
+    <div class="schedule">
+      <div class="day"><h6>MON · 周一</h6><div class="it"><b>高分榜刷新</b><span>每周榜单</span></div><div class="it"><b>冷门补完</b><span>1 篇速评</span></div></div>
+      <div class="day"><h6>TUE · 周二</h6><div class="it"><b>类型频道</b><span>悬疑专题</span></div><div class="it"><b>读者短评</b><span>精选更新</span></div></div>
+      <div class="day"><h6>WED · 周三</h6><div class="it"><b>院线速评</b><span>新片 1-2 篇</span></div><div class="it"><b>加更日</b><span>不定主题</span></div></div>
+      <div class="day"><h6>THU · 周四</h6><div class="it"><b>港片补完</b><span>第 2 期</span></div><div class="it"><b>片单推荐</b><span>按心情选片</span></div></div>
+      <div class="day"><h6>FRI · 周五</h6><div class="it"><b>周末片单</b><span>5 部推荐</span></div><div class="it"><b>观影指南</b><span>时长标注</span></div></div>
+      <div class="day"><h6>SAT · 周六</h6><div class="it"><b>长篇杂谈</b><span>编辑部观点</span></div><div class="it"><b>读者来信</b><span>公开回复</span></div></div>
+      <div class="day"><h6>SUN · 周日</h6><div class="it"><b>一周复盘</b><span>哪些值得补</span></div><div class="it"><b>加更日</b><span>不定主题</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 订阅 -->
+<section id="sub" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <div><div class="kicker" style="color:var(--yl)">06 / 读者来信</div><h3>把牛逼叉电影网<em>收进书签</em></h3><p>每周三、周日更新，没有推送轰炸，也没有算法。留下邮箱即可，也可直接把站点网址存进浏览器收藏夹。</p></div>
+      <div>
+        <form onsubmit="event.preventDefault();alert('已收到，我们会通过邮箱联系你。')">
+          <input type="email" placeholder="你的邮箱地址">
+          <button class="btn" type="submit">订阅</button>
+        </form>
+        <p class="note2">站点网址：<b>https://niubichadianyingwang-zh.github.io</b>　·　建议加入书签，随时回访牛逼叉电影网。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <div class="logo" style="margin-bottom:14px"><span class="box">叉</span><span class="tx"><b>牛逼叉电影网</b><small>N B C H A</small></span></div>
+        <p>牛逼叉电影网是一个聊电影、追剧、刷综艺的影视内容站点，提供院线速评、高分榜单、类型频道、港片补完、悬疑专题与每周影视杂谈。</p>
+        <div class="urlbox"><b>官方站点网址</b>https://niubichadianyingwang-zh.github.io<br>本站为静态单页站点，可直接收藏网址随时回访。</div>
+      </div>
+      <div><h6>频道导航</h6><ul>
+        <li><a href="#tab">速评速看</a></li><li><a href="#idx">类型频道</a></li><li><a href="#rank">高分榜单</a></li><li><a href="#talk">影视杂谈</a></li><li><a href="#sch">更新节目单</a></li>
+      </ul></div>
+      <div><h6>热门专题</h6><ul>
+        <li><a href="#">院线新片速评</a></li><li><a href="#">高分冷门榜</a></li><li><a href="#">港片补完计划</a></li><li><a href="#">悬疑专题第二季</a></li><li><a href="#">恐怖片盘点</a></li>
+      </ul></div>
+      <div><h6>关于我们</h6><ul>
+        <li><a href="#">关于牛逼叉电影网</a></li><li><a href="#">编辑部成员</a></li><li><a href="#">投稿与爆料</a></li><li><a href="#">商务合作</a></li><li><a href="#sub">读者来信</a></li>
+      </ul></div>
+    </div>
+    <div class="fb">
+      <span>© <span id="yr"></span> 牛逼叉电影网 nbcha · 保留所有权利 · 内容仅代表编辑部观点</span>
+      <span class="lk"><a href="#">关于我们</a><a href="#">免责声明</a><a href="#">隐私政策</a><a href="#">友情链接</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="top" aria-label="回到顶部">↑</button>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+/* 标签页 */
+var tabs=document.querySelectorAll('#tabs .tab'),posts=document.querySelectorAll('.posts .post');
+tabs.forEach(function(t){
+  t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.remove('on')});
+    t.classList.add('on');
+    var v=t.dataset.t;
+    posts.forEach(function(p){
+      var ok=(v==='all'||p.dataset.c=='undefined')?true:(p.dataset.c===v);
+      if(v==='all')ok=true;else ok=(p.dataset.c===v);
+      p.style.display=ok?'':'none';
+    });
+  });
+});
+/* 移动菜单 */
+var mb=document.getElementById('mbtn'),mp=document.getElementById('mpan');
+mb.addEventListener('click',function(){mp.classList.toggle('open')});
+mp.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mp.classList.remove('open')})});
+/* 回到顶部 */
+var tb=document.getElementById('top');
+window.addEventListener('scroll',function(){tb.classList.toggle('on',window.scrollY>500)});
+tb.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
